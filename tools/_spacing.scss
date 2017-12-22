@@ -39,6 +39,8 @@ $spacing: (
 
         .#{$namespace}py#{$key}     { padding-top: $value; padding-bottom: $value; }
         .#{$namespace}px#{$key}     { padding-left: $value; padding-right: $value; }
+
+        .#{$namespace}grid-#{$key}  { @include gutter($value); }
     }
 
 }

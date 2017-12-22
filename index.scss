@@ -1,9 +1,9 @@
 ///
-/// Generic
-/// Basic reset and low specificty global styles.
+/// Settings
+/// Global variable files.
 ///
-@import "generic/clearfix";
-@import "generic/foundation";
+@import "settings/defaults";
+@import "settings/responsive";
 
 ///
 /// Tools
@@ -17,12 +17,16 @@
 @import "tools/spacing";
 
 ///
-/// Settings
-/// Global variable files.
+/// Palette
 ///
-@import "settings/defaults";
 @import "settings/palette";
-@import "settings/responsive";
+
+///
+/// Generic
+/// Basic reset and low specificty global styles.
+///
+@import "generic/clearfix";
+@import "generic/foundation";
 
 ///
 /// Utilities

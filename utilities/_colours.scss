@@ -3,7 +3,7 @@
 /// using the colours from $palette-merged.
 ///
 
-@each $colour, $tones in $palette-merged {
+@each $colour, $tones in $palette {
     @each $key, $value in $tones {
         @if $key == 'base' {
 

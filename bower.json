@@ -3,5 +3,7 @@
     "version": "1.0",
     "description": "CSS toolkit based on Inuit.css/ITCSS",
     "license": "MIT",
-    "dependencies": {}
+    "main": [
+        "index.scss"
+    ],
 }
