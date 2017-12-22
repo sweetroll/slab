@@ -15,6 +15,11 @@ html {
     line-height: $base-line-height;
     box-sizing: border-box;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     line-height: 1;
