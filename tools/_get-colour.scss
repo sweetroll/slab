@@ -1,0 +1,28 @@
+///
+/// The function used to fetch valid colour values from the $pallete data map.
+///
+/// @name       getColour
+/// @group      tools
+/// @param      {string} $colour - A reference to an available colour in $pallete.
+/// @param      {string} $tone [base] - A reference to an available tone within a selected colour.
+/// @require    {variable} $palette
+/// @return     {string} colour value (HEX, RGB)
+///
+/// @example
+///     color: getColour('grey', 'light');
+///     color: getColour('blue');
+///
+@function getColour($colour, $tone: 'base') {
+    @return map-deep-get($palette, $colour, $tone);
+}
+
+///
+/// An alias of getColour with the american spelling because we all make mistakes...
+///
+/// @name       getColor
+/// @group      tools
+/// @see        getColour
+///
+@function getColor($colour, $tone: 'base') {
+    @return getColour($colour, $tone);
+}

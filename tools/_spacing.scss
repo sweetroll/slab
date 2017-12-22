@@ -1,0 +1,44 @@
+///
+/// @name spacing
+/// @group tools
+/// @access private
+/// @param {string} $namespace - label of breakpoint
+/// @return {css} - human readable namespaced spacing classes
+///
+
+$spacing: (
+    0: 0,
+    1: $base-spacing-unit / 4,
+    2: $base-spacing-unit / 2,
+    4: $base-spacing-unit,
+    8: $base-spacing-unit * 2,
+    16: $base-spacing-unit * 4,
+    32: $base-spacing-unit * 8,
+    64: $base-spacing-unit * 16
+);
+
+@mixin spacing($namespace: "") {
+
+    @each $key, $value in $spacing {
+        .#{$namespace}m#{$key}      { margin: $value; }
+
+        .#{$namespace}mt#{$key}     { margin-top: $value; }
+        .#{$namespace}mr#{$key}     { margin-right: $value; }
+        .#{$namespace}mb#{$key}     { margin-bottom: $value; }
+        .#{$namespace}ml#{$key}     { margin-left: $value; }
+
+        .#{$namespace}my#{$key}     { margin-top: $value; margin-bottom: $value; }
+        .#{$namespace}mx#{$key}     { margin-left: $value; margin-right: $value; }
+
+        .#{$namespace}p#{$key}      { padding: $value; }
+
+        .#{$namespace}pt#{$key}     { padding-top: $value; }
+        .#{$namespace}pr#{$key}     { padding-right: $value; }
+        .#{$namespace}pb#{$key}     { padding-bottom: $value; }
+        .#{$namespace}pl#{$key}     { padding-left: $value; }
+
+        .#{$namespace}py#{$key}     { padding-top: $value; padding-bottom: $value; }
+        .#{$namespace}px#{$key}     { padding-left: $value; padding-right: $value; }
+    }
+
+}

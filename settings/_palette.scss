@@ -1,0 +1,22 @@
+///
+/// An initialisation of the array where application specific colours should be declared. Can be used
+/// also to override default colours declared in $palette-default.
+///
+/// @name palette
+/// @type Map
+/// @prop {Map} pallette - A named colour palette to house different tones of said palette
+/// @prop {String} pallette.tone [Colour] - A key-value pair to describe the tone of the parent palette
+///       and supply the valid colour value.
+/// @example
+///     $palette: (
+///         'grey': (
+///             'base': #999,
+///             'light': lighten(#999, 25%),
+///             'dark': darken(#999, 25%)
+///         ),
+///         'red': (
+///             'base': #F00
+///         ),
+///     );
+///
+$palette: () !default;

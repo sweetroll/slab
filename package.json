@@ -1,0 +1,14 @@
+{
+  "name": "slab",
+  "version": "1.0",
+  "description": "CSS toolkit based on Inuit.css/ITCSS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sweetroll/slab.git"
+  },
+  "author": "Evolution 7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sweetroll/slab/issues"
+  }
+}

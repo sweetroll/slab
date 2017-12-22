@@ -1,0 +1,120 @@
+///
+/// Grid sizes in human readable format. These are used in conjunction with other
+/// objects and abstractions found the framework, most commonly the grid system.
+/// The mixin is privately accessed in utilities/_grid.scss to activate the classes
+/// within the required media queries.
+///
+/// @name grid
+/// @group tools
+/// @access private
+/// @param {string} $namespace - label of breakpoint
+/// @return {css} - human readable namespaced grid classes
+///
+
+@mixin grid($namespace: "") {
+    ///
+    /// Whole
+    ///
+    .#{$namespace}one-whole         { width: 100%; }
+
+    ///
+    /// Halves
+    ///
+    .#{$namespace}one-half          { width: 50%; }
+
+    ///
+    /// Thirds
+    ///
+    .#{$namespace}one-third         { width: 33.33333333%; }
+    .#{$namespace}two-thirds        { width: 66.66666666%; }
+
+    ///
+    /// Quarters
+    ///
+    .#{$namespace}one-quarter       { width: 25%; }
+    .#{$namespace}two-quarters      { @extend .#{$namespace}one-half; }
+    .#{$namespace}three-quarters    { width: 75%; }
+
+    ///
+    /// Fifths
+    ///
+    .#{$namespace}one-fifth         { width: 20%; }
+    .#{$namespace}two-fifths        { width: 40%; }
+    .#{$namespace}three-fifths      { width: 60%; }
+    .#{$namespace}four-fifths       { width: 80%; }
+
+    ///
+    /// Sixths
+    ///
+    .#{$namespace}one-sixth         { width: 16.66666666%; }
+    .#{$namespace}two-sixths        { @extend .#{$namespace}one-third; }
+    .#{$namespace}three-sixths      { @extend .#{$namespace}one-half; }
+    .#{$namespace}four-sixths       { @extend .#{$namespace}two-thirds; }
+    .#{$namespace}five-sixths       { width: 83.33333333%; }
+
+    ///
+    /// Eighths
+    ///
+    .#{$namespace}one-eighth        { width: 12.5%; }
+    .#{$namespace}two-eighths       { @extend .#{$namespace}one-quarter; }
+    .#{$namespace}three-eighths     { width: 37.5%; }
+    .#{$namespace}four-eighths      { @extend .#{$namespace}one-half; }
+    .#{$namespace}five-eighths      { width: 62.5%; }
+    .#{$namespace}six-eighths       { @extend .#{$namespace}three-quarters; }
+    .#{$namespace}seven-eighths     { width: 87.5%; }
+
+    ///
+    /// Tenths
+    ///
+    .#{$namespace}one-tenth         { width: 10%; }
+    .#{$namespace}two-tenths        { @extend .#{$namespace}one-fifth; }
+    .#{$namespace}three-tenths      { width: 30%; }
+    .#{$namespace}four-tenths       { @extend .#{$namespace}two-fifths; }
+    .#{$namespace}five-tenths       { @extend .#{$namespace}one-half; }
+    .#{$namespace}six-tenths        { @extend .#{$namespace}three-fifths; }
+    .#{$namespace}seven-tenths      { width: 70%; }
+    .#{$namespace}eight-tenths      { @extend .#{$namespace}four-fifths; }
+    .#{$namespace}nine-tenths       { width: 90%; }
+
+    ///
+    /// Twelfths
+    ///
+    .#{$namespace}one-twelfth       { width: 8.33333333%; }
+    .#{$namespace}two-twelfths      { @extend .#{$namespace}one-sixth; }
+    .#{$namespace}three-twelfths    { @extend .#{$namespace}one-quarter; }
+    .#{$namespace}four-twelfths     { @extend .#{$namespace}one-third; }
+    .#{$namespace}five-twelfths     { width: 41.66666666% }
+    .#{$namespace}six-twelfths      { @extend .#{$namespace}one-half; }
+    .#{$namespace}seven-twelfths    { width: 58.33333333%; }
+    .#{$namespace}eight-twelfths    { @extend .#{$namespace}two-thirds; }
+    .#{$namespace}nine-twelfths     { @extend .#{$namespace}three-quarters; }
+    .#{$namespace}ten-twelfths      { @extend .#{$namespace}five-sixths; }
+    .#{$namespace}eleven-twelfths   { width: 91.66666666%; }
+
+    .#{$namespace}grid-#{$key}  { @include gutter($value); }
+
+    .#{$namespace}grid--rev {
+        direction: rtl;
+
+        > .grid__item {
+            direction: ltr;
+        }
+    }
+
+    .#{$namespace}grid--right { text-align: right; }
+
+    .#{$namespace}grid--center { text-align: center; }
+
+    .#{$namespace}grid--middle {
+        > .grid__item {
+            vertical-align: middle;
+        }
+    }
+
+    .#{$namespace}grid--bottom {
+        > .grid__item {
+            vertical-align: bottom;
+        }
+    }
+
+}

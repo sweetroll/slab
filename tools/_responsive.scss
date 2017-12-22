@@ -1,0 +1,24 @@
+///
+/// Mixin to active specific styles in one of the named breakpoints
+/// defined in $breakpoints (settings/_responsive.scss).
+///
+/// @name media-query
+/// @group tools
+/// @params {string} $media-query - Must have been declated in $breakpoints
+///
+/// @example
+///     @include media-query(palm){
+///         [styles here]
+///     }
+///
+
+@mixin media-query($media-query) {
+    $declaration: map-get($breakpoints, $media-query);
+    @if $declaration {
+        @media only screen and #{$declaration} {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint '#{$media-query}' does not exist";
+    }
+}

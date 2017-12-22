@@ -1,0 +1,20 @@
+///
+/// Mixin to set gutter of a grid.
+///
+/// @name gutter
+/// @group tools
+/// @param {int} $width - should include unit
+///
+/// @example
+///     .grid {
+///         @include gutter(15px);
+///     }
+///
+
+@mixin gutter($width) {
+    margin-left: -($width);
+
+    > .grid__item {
+        padding-left: $width;
+    }
+}

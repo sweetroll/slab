@@ -1,0 +1,25 @@
+///
+/// Simple helper classes for hiding and showing content based on media queries.
+///
+
+@each $key, $value in $breakpoints {
+    .hide--#{$key} {
+        @include media-query(#{$key}) {
+            display: none !important;
+        }
+    }
+
+    .show--#{$key} {
+        display: none !important;
+
+        @include media-query(#{$key}) {
+            display: initial !important;
+        }
+
+        &.grid__item {
+            @include media-query(#{$key}) {
+                display: inline-block !important;
+            }
+        }
+    }
+}
