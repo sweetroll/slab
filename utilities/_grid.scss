@@ -128,6 +128,16 @@
     .#{$namespace}five-sixths       { width: 83.33333333%; }
 
     ///
+    /// Sevenths
+    ///
+    .#{$namespace}one-seventh       { width: 14.285714286%; }
+    .#{$namespace}two-sevenths      { width: 28.571428572% }
+    .#{$namespace}three-sevenths    { width: 42.857142858% }
+    .#{$namespace}four-sevenths     { width: 57.142857144% }
+    .#{$namespace}five-sevenths     { width: 71.42857143%; }
+    .#{$namespace}six-sevenths      { width: 85.714285716%; }
+
+    ///
     /// Eighths
     ///
     .#{$namespace}one-eighth        { width: 12.5%; }
