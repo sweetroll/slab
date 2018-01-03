@@ -1,0 +1,31 @@
+////
+/// @name get-spacing
+/// @group tools
+////
+
+///
+/// The function used to fetch valid spacing values from the $spacing data map.
+///
+/// @name       getSpacing
+/// @type       Function
+/// @param      {string} $key - A reference to an available spacing value in $spacing.
+/// @require    {variable} $spacing
+/// @return     {string} sizing value (rem)
+///
+/// @example
+///     color: getSpacing(3);
+///
+@function getSpacing($key) {
+    @return map-get($spacing, $key);
+}
+
+///
+/// An alias of getColour with the american spelling because we all make mistakes...
+///
+/// @name       getColor
+/// @type       Function
+/// @see        getColour
+///
+@function s($key) {
+    @return getSpacing($key);
+}

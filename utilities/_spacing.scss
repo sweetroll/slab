@@ -1,8 +1,13 @@
-///
+////
 /// @name spacing
 /// @group tools
+////
+
+///
+/// @name   spacing
+/// @type   Mixin
 /// @access private
-/// @param {string} $namespace - label of breakpoint
+/// @param  {string} $namespace - label of breakpoint
 /// @return {css} - human readable namespaced spacing classes
 ///
 
@@ -15,7 +20,7 @@ $spacing: (
     16: $base-spacing-unit * 4,
     32: $base-spacing-unit * 8,
     64: $base-spacing-unit * 16
-);
+) !default;
 
 @mixin spacing($namespace: "") {
 
