@@ -3,23 +3,8 @@
 /// Global variable files.
 ///
 @import "settings/defaults";
-@import "settings/responsive";
-
-///
-/// Tools
-/// Globally available tools and mixins.
-///
-@import "tools/get-colour";
-@import "tools/grid";
-@import "tools/gutter";
-@import "tools/map-deep-get";
-@import "tools/responsive";
-@import "tools/spacing";
-
-///
-/// Palette
-///
 @import "settings/palette";
+@import "settings/responsive";
 
 ///
 /// Generic
@@ -33,6 +18,7 @@
 ///
 @import "utilities/colours";
 @import "utilities/grid";
+@import "utilities/spacing";
 @import "utilities/visibility";
 
 ///

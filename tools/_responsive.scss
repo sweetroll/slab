@@ -1,9 +1,14 @@
+////
+/// @name responsive
+/// @group tools
+////
+
 ///
 /// Mixin to active specific styles in one of the named breakpoints
 /// defined in $breakpoints (settings/_responsive.scss).
 ///
-/// @name media-query
-/// @group tools
+/// @name   media-query
+/// @type   Mixin
 /// @params {string} $media-query - Must have been declated in $breakpoints
 ///
 /// @example

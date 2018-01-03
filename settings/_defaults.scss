@@ -1,11 +1,10 @@
-///
-/// The default type and border properties (colours, sizing, font) and
-/// well as the default spacing measurement that is used for the grid
-/// gutters and components default padding/margins.
-///
-/// @name Defaults
+////
+/// @name defaults
 /// @group settings
 ///
+/// Default type, colour and spacing measurement that is
+/// used for the grid gutters and components padding/margins.
+////
 
 ///
 /// Default typography font size/styles
@@ -15,15 +14,10 @@ $base-font-family: Helvetica, sans-serif !default;
 $base-line-height: 1.5 !default;
 
 ///
-/// Default font colors
+/// Default colors
 ///
 $base-font-color: #999999 !default;
 $action-color: #477DCA !default;
-
-///
-/// Default background colours
-///
-$base-background-color: #fff !default;
 
 ///
 /// Default spacing units

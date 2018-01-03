@@ -1,8 +1,13 @@
+////
+/// @name get-colour
+/// @group tools
+////
+
 ///
 /// The function used to fetch valid colour values from the $pallete data map.
 ///
 /// @name       getColour
-/// @group      tools
+/// @type       Function
 /// @param      {string} $colour - A reference to an available colour in $pallete.
 /// @param      {string} $tone [base] - A reference to an available tone within a selected colour.
 /// @require    {variable} $palette
@@ -20,7 +25,7 @@
 /// An alias of getColour with the american spelling because we all make mistakes...
 ///
 /// @name       getColor
-/// @group      tools
+/// @type       Function
 /// @see        getColour
 ///
 @function getColor($colour, $tone: 'base') {

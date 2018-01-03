@@ -1,6 +1,11 @@
+////
+/// @name colours
+/// @group utilities
+////
+
 ///
 /// Loop to create helper classes for quick background and text changes
-/// using the colours from $palette-merged.
+/// using the colours from $palette.
 ///
 
 @each $colour, $tones in $palette {
