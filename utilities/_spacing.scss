@@ -18,8 +18,7 @@ $spacing: (
     4: $base-spacing-unit,
     8: $base-spacing-unit * 2,
     16: $base-spacing-unit * 4,
-    32: $base-spacing-unit * 8,
-    64: $base-spacing-unit * 16
+    32: $base-spacing-unit * 8
 ) !default;
 
 @mixin spacing($namespace: "") {
