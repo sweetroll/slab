@@ -32,7 +32,10 @@
 ///
 @each $key, $value in $breakpoints {
     @include media-query($key) {
-       @include grid('#{$key}-');
-       @include spacing('#{$key}-');
+        @include grid('#{$key}-');
+
+        @if $responsive-spacing == true {
+            @include spacing('#{$key}-');
+        }
     }
 }

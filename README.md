@@ -32,6 +32,9 @@ Colour for all standard text and headings.
 `$base-spacing-unit` (default: `$base-line-height` * 0.25rem)
 The base spacing unit is use to calculate all spacing helpers provided by Slab.css. See ‘Spacing’ section to see default classes given and how to use them.
 
+`$responsive-spacing` (default: false)
+A boolean used to toggle the generation of the responsive spacing utility classes. See ‘Spacing’ section for more details.
+
 ## Responsive
 Slab.css manages its breakpoints and responsive helper classes via a sass data map `$breakpoints`. The data map allows you to set a media query and give it a name allowing it to be referenced easier throughout your application.
 
@@ -183,11 +186,12 @@ If we assume `$base-spacing-unit: 4px`
 .px2 // padding-left: 8px; padding-right: 8px;
 .py1 // padding-top: 4px; padding-bottom: 4px;
 
+// Responsive utility classes
 .portable-mb32 // margin-bottom: 128px; on portable breakpoint
 .desk-wide-p0 // padding: 0; on desk-wide breakpoint
 ```
 
-*Note:* Each value in the spacing data map produces a large amount of css. If a value is not used in your application it is recommended to overwrite the data map in your `_vars.scss` with the appropriate values to reduce file size.
+*Note:* Each value in the spacing data map produces a large amount of css. If a value is not used in your application it is recommended to overwrite the data map in your `_vars.scss` with the appropriate values to reduce file size. Or alternatively if your application does not make use of the responsive utility classes you can switch them off via the `$responsive-spacing` boolean variable.
 
 ## Visibility
 Responsive visibility helper classes are available to hide/show content based on breakpoints.
