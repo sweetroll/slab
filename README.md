@@ -29,9 +29,6 @@ Sets line height for all text. Also used to calculate `$base-spacing-unit`.
 `$base-font-color`  (default: #999999)
 Colour for all standard text and headings.
 
-`$action-color` (default: #477DCA)
-Sets link colour. 
-
 `$base-spacing-unit` (default: `$base-line-height` * 1rem)
 The base spacing unit is use to calculate all spacing helpers provided by Slab.css. See ‘Spacing’ section to see default classes given and how to use them.
 

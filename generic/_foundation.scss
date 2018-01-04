@@ -4,15 +4,10 @@
  * https://github.com/jaydenseric/Fix
 */
 html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
-    font-size: $base-font-size;
-    font-family: $base-font-family;
-    font-feature-settings: "kern", "liga", "pnum";
-    line-height: $base-line-height;
     box-sizing: border-box;
 }
 
@@ -22,8 +17,11 @@ html {
 
 body {
     margin: 0;
-    line-height: 1;
     color: $base-font-color;
+    line-height: $base-line-height;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    font-feature-settings: "kern", "liga", "pnum";
 }
 iframe {
     border: 0;
