@@ -13,12 +13,12 @@
 
 $spacing: (
     0: 0,
-    1: $base-spacing-unit / 4,
-    2: $base-spacing-unit / 2,
-    4: $base-spacing-unit,
-    8: $base-spacing-unit * 2,
-    16: $base-spacing-unit * 4,
-    32: $base-spacing-unit * 8
+    1: $base-spacing-unit,
+    2: $base-spacing-unit * 2,
+    3: $base-spacing-unit * 3,
+    4: $base-spacing-unit * 4,
+    5: $base-spacing-unit * 5,
+    6: $base-spacing-unit * 6
 ) !default;
 
 @mixin spacing($namespace: "") {

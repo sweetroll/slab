@@ -29,7 +29,7 @@ Sets line height for all text. Also used to calculate `$base-spacing-unit`.
 `$base-font-color`  (default: #999999)
 Colour for all standard text and headings.
 
-`$base-spacing-unit` (default: `$base-line-height` * 1rem)
+`$base-spacing-unit` (default: `$base-line-height` * 0.25rem)
 The base spacing unit is use to calculate all spacing helpers provided by Slab.css. See ‘Spacing’ section to see default classes given and how to use them.
 
 ## Responsive
@@ -164,18 +164,18 @@ Slab.css allows for the creation of utility classes and sass variables to help w
 ```scss
 $spacing: (
     0: 0,
-    1: $base-spacing-unit / 4,
-    2: $base-spacing-unit / 2,
-    4: $base-spacing-unit,
-    8: $base-spacing-unit * 2,
-    16: $base-spacing-unit * 4,
-    32: $base-spacing-unit * 8
+    1: $base-spacing-unit,
+    2: $base-spacing-unit * 2,
+    3: $base-spacing-unit * 3,
+    4: $base-spacing-unit * 4,
+    5: $base-spacing-unit * 5,
+    6: $base-spacing-unit * 6
 ) !default;
 ```
 
 Form these values, responsive utility classes are created for both margin and padding in the format `{namespace}-{margin/padding}{direction}{data map key}’.
 
-If we assume `$base-spacing-unit: 16px`
+If we assume `$base-spacing-unit: 4px`
 
 ```scss
 .m4  // margin: 16px;
