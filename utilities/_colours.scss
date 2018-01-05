@@ -13,7 +13,7 @@
         @if $key == 'base' {
 
             .bg--#{$colour} {
-                background: $value !important;
+                background-color: $value !important;
             }
 
             .text--#{$colour} {
@@ -23,7 +23,7 @@
         } @else {
 
             .bg--#{$colour}-#{$key} {
-                background: $value !important;
+                background-color: $value !important;
             }
 
             .text--#{$colour}-#{$key} {
