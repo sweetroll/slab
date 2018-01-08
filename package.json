@@ -2,10 +2,15 @@
   "name": "slab.css",
   "version": "1.0.0",
   "description": "CSS toolkit based on Inuit.css/ITCSS",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/evolution7/slab.css.git"
+    "url": "git+ssh://git@bitbucket.org/evolution7/slab.css.git"
   },
-  "author": "Evolution 7",
+  "author": "Evolution7",
   "license": "MIT",
+  "homepage": "https://bitbucket.org/evolution7/slab.css#readme"
 }
