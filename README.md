@@ -40,12 +40,12 @@ Slab.css manages its breakpoints and responsive helper classes via a sass data m
 
 ```scss
 $breakpoints: (
-    palm: '(max-width: 47.938em)',
-    lap: '(min-width: 48em) and (max-width: 63.938em)',
-    portable: '(max-width: 63.938em)',
-    lap-and-up: '(min-width: 48em)',
-    desk: '(min-width: 64em)',
-    desk-wide: '(min-width: 90em)'
+    palm: '(max-width: 767px)',
+    lap: '(min-width: 768px) and (max-width: 1023px)',
+    portable: '(max-width: 1023px)',
+    lap-and-up: '(min-width: 768px)',
+    desk: '(min-width: 1024px)',
+    desk-wide: '(min-width: 1440px)'
 ) !default;
 ```
 
@@ -75,12 +75,12 @@ Create map:
 $palette: (
     'grey': (
         'base': #999,
-      'light': lighten(#999, 25%),
-      'dark': #333
+        'light': lighten(#999, 25%),
+        'dark': #333
     ),
-  'red': (
+    'red': (
         'base': #F00
-  ),
+    ),
 );
 ```
 
@@ -121,7 +121,8 @@ A grid is always wrapped in a `grid` class with each item having `grid__item`. B
 ```html
 <!-- HTML Comments -->  
 <div class="grid">
-    <div class="grid__item one-half palm-one-third"></div><!-- --><div class="grid__item one-half palm-one-third"></div><!--
+    <div class="grid__item one-half palm-one-third"></div><!--
+--><div class="grid__item one-half palm-one-third"></div><!--
 --><div class="grid__item one-whole palm-one-third"></div>
 </div>
 
@@ -129,7 +130,8 @@ A grid is always wrapped in a `grid` class with each item having `grid__item`. B
 <!-- Craft CMS helper -->
 {% spaceless %}
 <div class="grid">
-    <div class="grid__item one-half palm-one-third"></div>          <div class="grid__item one-half palm-one-third"></div>
+    <div class="grid__item one-half palm-one-third"></div>
+    <div class="grid__item one-half palm-one-third"></div>
     <div class="grid__item one-whole palm-one-third"></div>
 </div>
 {% endspaceless %}

@@ -1,9 +1,10 @@
 {
-    "name": "slab",
-    "version": "1.0",
+    "name": "slab.css",
+    "version": "1.0.0",
     "description": "CSS toolkit based on Inuit.css/ITCSS",
     "license": "MIT",
     "main": [
-        "index.scss"
+        "index.scss",
+        "tools.scss"
     ]
 }
