@@ -9,6 +9,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
+    font-size: $base-font-size;
 }
 
 *, *:before, *:after {
@@ -19,7 +20,6 @@ body {
     margin: 0;
     color: $base-font-color;
     line-height: $base-line-height;
-    font-size: $base-font-size;
     font-family: $base-font-family;
     font-feature-settings: "kern", "liga", "pnum";
 }
